@@ -1,0 +1,19 @@
+Lập trình hướng đối tượng phải tuân theo 4 đặc điểm:
+1. ENCAPSULATION (TÍNH ĐÓNG GÓI)
+    Class phải được ẩn toàn bộ dữ liệu
+    Nghĩa là các thuộc tính phải đóng lại, không cho truy xuất trực tiếp từ bên ngoài vào
+    Để làm được điều này thì phải chuyển hết các thuộc tính (VD: std::string ho_ten) phải được để trong private chứ không phải public
+2. ABSTRACTION (TÍNH TRỪU TƯỢNG)
+    Khi để các dữ liệu vào trong private mà muốn cập nhật hoặc thay đổi dữ liệu thì phải làm sao? -> Dữ liệu vẫn có thể được thay đổi nhưng phải thông qua cơ chế
+    -> nghĩa là nếu người khác muốn sửa đổi dữ liệu của tôi cũng được -> Nhưng việc sửa đổi như thế nào thì do tôi cung cấp 1 cơ chế có sẵn và các cơ chế này sẽ được thể hiện qua các phương thức (methob)
+    VD: bai6.cc
+3. INHERITANCE (TÍNH KẾ THỪA)
+    Nếu nhiều class có đặc điểm chung thì chúng ta có thể nhóm lại thành 1 cây kế thừa
+    VD như phụ nữ có các điểm chung thì những điểm chung ấy gọi là "class base"
+    VD như class Phu_nu có thể coi như 1 class cơ sở (class base) vì ta thấy các hành vi như trang điểm (trang_diem), chơi nhạc cụ (choi_nhac_cu), vá zin (va_zin)... đều là những hành vi chung của phụ nữ mà mọi phụ nữ đều có (hình mẫu phụ nữ chung mà các phụ nữ khác nhau cũng sẽ dựa trên hình mẫu phụ nữ này)
+    -> Nói cách khác: chúng kế thừa các đặc điểm, tính chất của hình mẫu phụ nữ
+    VD: bai7.cc, bai8.cc, bai9.cc 
+4. POLYMORPHISM (TÍNH ĐA HÌNH)
+    Tức là có nhiều hình thái
+    Nghĩa là sẽ có cùng 1 phương thức ở lớp cơ sở, nhưng sẽ có những hình thái khác nhau ở những lớp dẫn xuất
+    
